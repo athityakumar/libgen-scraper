@@ -7,6 +7,7 @@ mechanize.pluggable_parser.default = Mechanize::Download
 
 unless Dir.exist? "pdf"
     Dir.mkdir("pdf")
+    puts "Created folder 'pdf' to download books into."
 end 
 Dir.chdir("pdf")
 
