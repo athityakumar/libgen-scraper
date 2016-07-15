@@ -35,9 +35,13 @@ end
 while !(select >= 1 && select <= i)
   puts "Select a book (1 - #{i}) : "
   select = gets.chomp.to_i
-  filename = hash_list[select-1][2] + " " + hash_list[select-1][1]
-  filename = filename.gsub(" ","_")
-  puts "Starting download of #{filename}.pdf"
-  mechanize.get("http://libgen.io/get/#{hash_list[select-1][0]}/#{filename}.pdf").save
-  puts "Finished download of #{filename}.pdf"
+  if (select >= 1 && select <= i)
+    filename = hash_list[select-1][2] + " " + hash_list[select-1][1]
+    filename = filename.gsub(" ","_")
+    puts "Starting download of #{filename}.pdf"
+    mechanize.get("http://libgen.io/get/#{hash_list[select-1][0]}/#{filename}.pdf").save
+    puts "Finished download of #{filename}.pdf"
+  else
+    puts "Invalid choice."
+  end
 end
