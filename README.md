@@ -8,9 +8,12 @@ TO-DO LIST
 - [x] Search and download of books
 - [ ] Add feature of search results of more pages
 - [ ] Add looping for user to download many books in a single usage
+- [ ] Add Estimated time for download
+- [ ] Add extra info such as number of pages , file size & language.
+- [ ] Add batch-download with input like 1,4,17
 
-USING CHEM-EQN
------------------
+USING LIBGEN-SCRAPER
+--------------------
 Type these commands on a terminal - 
 <br> (1)  `git clone git@github.com:athityakumar/libgen-scraper.git`
 <br> (2)  `cd libgen-scraper`
